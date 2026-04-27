@@ -1,4 +1,4 @@
-package com.mz.lec;
+package com.mz.lec.menu;
 
 import lombok.Data;
 
