@@ -1,0 +1,16 @@
+
+// application.properties - 서버 기본 설정
+#server
+#server.port=80
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp
+server.servlet.jsp.init-parameters.development=true
+
+
+
+
+  // build.gradle - jsp 구동하기 위함. & jstl 
+    implementation 'org.apache.tomcat.embed:tomcat-embed-jasper'
+    implementation 'jakarta.servlet:jakarta.servlet-api'
+    implementation 'jakarta.servlet.jsp.jstl:jakarta.servlet.jsp.jstl-api'
+    implementation 'org.glassfish.web:jakarta.servlet.jsp.jstl'

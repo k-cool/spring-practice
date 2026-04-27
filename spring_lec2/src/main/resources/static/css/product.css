@@ -1,0 +1,26 @@
+.item {
+    justify-content: center;
+    display: flex;
+    height: 50px;
+    font-size: 20pt;
+}
+
+.item:hover {
+    background-color: #ff63478c;
+}
+
+.item div:nth-child(1) {
+    width: 100px;
+}
+
+.item div:nth-child(2) {
+    width: 200px;
+}
+
+.item div:nth-child(3) {
+    width: 200px;
+}
+
+.item.temp {
+    display: none;
+}
