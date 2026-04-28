@@ -12,6 +12,9 @@
 <button onclick="location.href = '/products'">product2</button>
 <button onclick="location.href = '/api/product'">product-async</button>
 
+<hr>
+
+<button onclick="location.href = 'upload'">file page</button>
 
 </body>
 </html>

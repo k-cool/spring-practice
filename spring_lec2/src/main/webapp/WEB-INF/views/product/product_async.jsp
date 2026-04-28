@@ -44,35 +44,42 @@
 
         <h1>- product update -</h1>
 
-        <form action="/product/update" method="post">
+        <div>
             <div>
-                <div>
-                    <select name="p_no">
-                        <c:forEach items="${products}" var="p">
-                            <option value="${p.p_no}">no. ${p.p_no}</option>
-                        </c:forEach>
-                    </select>
-                </div>
-                <div><input type="text" placeholder="name" name="p_name"></div>
-                <div><input type="text" placeholder="price" name="p_price"></div>
-                <div>
-                    <button>update</button>
-                </div>
+                <select id="update-select" name="p_no"></select>
             </div>
-        </form>
+            <div><input id="update-name" type="text" placeholder="name" name="p_name"></div>
+            <div><input id="update-price" type="text" placeholder="price" name="p_price"></div>
+            <div>
+                <button id="update-btn">update</button>
+            </div>
+        </div>
 
         <hr>
 
         <h1>- product delete -</h1>
 
-        <form action="/product/delete">
-            <input type="text" name="no">
-            <button>delete</button>
-        </form>
+        <div>
+            <input id="delete-input" type="text" name="no">
+            <button id="delete-btn">delete</button>
+        </div>
 
         <hr>
 
     </div>
 
+    <button id="openModal">Open Modal</button>
+
+
+    <dialog id="myModal">
+        <h2>Product Modal</h2>
+        <div>
+            <div class="modal-no"></div>
+            <div class="modal-name"></div>
+            <div class="modal-price"></div>
+        </div>
+        <button id="closeModal">Close</button>
+    </dialog>
+</div>
 </body>
 </html>

@@ -33,4 +33,9 @@ public class ProductAPIC {
     public int deleteProduct(@PathVariable int pk) {
         return productS.delete(pk);
     }
+
+    @PutMapping("/{pk}")
+    public int updateProduct(@PathVariable int pk, @RequestBody ProductVO productVO) {
+        return productS.update(productVO);
+    }
 }
